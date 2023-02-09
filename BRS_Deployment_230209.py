@@ -11,10 +11,7 @@ df1=pd.read_csv("Cleaned_Data_Actual.csv")
 dfu=pd.read_csv("User_USA.csv")
 dfo=pd.read_csv("User_Other.csv")
 df2=pd.read_csv("Zero_Rating.csv")
-df1.drop_duplicates(keep='first', inplace=True)
-df2=df2.drop_duplicates(keep='first')
-dfu=dfu.drop_duplicates(keep='first')
-dfo=dfo.drop_duplicates(keep='first')
+
 
 min_rat1 = 50
 min_rat2 = 10
